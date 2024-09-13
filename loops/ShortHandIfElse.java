@@ -9,5 +9,6 @@ public class ShortHandIfElse {
         int time = x/2;
         String result = (time < 18) ? "Good day." : "Good evening.";
         System.out.println(result);
+        //return (time>18)?"Good Evening.":"Good Day"; //This will not work in this method since it is returning void, to work make it String
     }
 }
