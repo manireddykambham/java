@@ -1,7 +1,7 @@
 package variables;
 
 public class AllVariables {
-    public static void main(String[] args) {
+    public static void variables() {
         int myNum = 5;
         float myFloatNum = 5.99f;
         char myLetter = 'D';
