@@ -4,6 +4,9 @@ import methods.ObjectClass;
 import methods.PublicVsStatic;
 import methods.SecondClass;
 import packageapi.ScannerClass;
+import polymorphism.Animal;
+import polymorphism.Dog;
+import polymorphism.Pig;
 
 import static methods.MethodBasic.myMethod;
 import static methods.PublicVsStatic.myStaticMethod;
@@ -24,10 +27,14 @@ public class Main {
         Person myPerson = new Person();
         myPerson.Setname("John");
         System.out.println(myPerson.Getname());
-        ScannerClass scannerClass = new ScannerClass();
+        /*ScannerClass scannerClass = new ScannerClass();
         scannerClass.scan();
-        scannerClass.print();
-
-
+        scannerClass.print();*/
+        Animal myAnimal = new Animal();  // Create a Animal object
+        Animal myPig = new Pig();  // Create a Pig object
+        Animal myDog = new Dog();  // Create a Dog object
+        myAnimal.animalSound();
+        myPig.animalSound();
+        myDog.animalSound();
     }
 }
