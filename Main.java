@@ -1,4 +1,5 @@
 import HelloWorld.HelloWorld;
+import encapsulation.Person;
 import methods.ObjectClass;
 import methods.PublicVsStatic;
 import methods.SecondClass;
@@ -19,6 +20,9 @@ public class Main {
         myStaticMethod();
         publicVsStatic.fullThrottle();
         publicVsStatic.speed(900);
+        Person myPerson = new Person();
+        myPerson.Setname("John");
+        System.out.println(myPerson.Getname());
 
 
     }
