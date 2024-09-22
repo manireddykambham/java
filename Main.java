@@ -1,6 +1,7 @@
 import HelloWorld.HelloWorld;
 import encapsulation.Person;
 import interfaces.InterfaceClass;
+import interfaces.MultipleInterfaceClass;
 import methods.ObjectClass;
 import methods.PublicVsStatic;
 import methods.SecondClass;
@@ -40,6 +41,9 @@ public class Main {
         InterfaceClass cat = new InterfaceClass();
         cat.sleep();
         cat.eat();
+        MultipleInterfaceClass multipleInterfaceClass = new MultipleInterfaceClass();
+        multipleInterfaceClass.myMethod();
+        multipleInterfaceClass.myOtherMethod();
 
     }
 }
