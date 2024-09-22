@@ -1,5 +1,6 @@
 import HelloWorld.HelloWorld;
 import encapsulation.Person;
+import interfaces.InterfaceClass;
 import methods.ObjectClass;
 import methods.PublicVsStatic;
 import methods.SecondClass;
@@ -36,5 +37,9 @@ public class Main {
         myAnimal.animalSound();
         myPig.animalSound();
         myDog.animalSound();
+        InterfaceClass cat = new InterfaceClass();
+        cat.sleep();
+        cat.eat();
+
     }
 }
