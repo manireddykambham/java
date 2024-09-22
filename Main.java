@@ -1,5 +1,6 @@
 import HelloWorld.HelloWorld;
 import encapsulation.Person;
+import enums.EnumExample;
 import interfaces.InterfaceClass;
 import interfaces.MultipleInterfaceClass;
 import methods.ObjectClass;
@@ -9,6 +10,8 @@ import packageapi.ScannerClass;
 import polymorphism.Animal;
 import polymorphism.Dog;
 import polymorphism.Pig;
+
+import java.awt.*;
 
 import static methods.MethodBasic.myMethod;
 import static methods.PublicVsStatic.myStaticMethod;
@@ -44,6 +47,10 @@ public class Main {
         MultipleInterfaceClass multipleInterfaceClass = new MultipleInterfaceClass();
         multipleInterfaceClass.myMethod();
         multipleInterfaceClass.myOtherMethod();
+        EnumExample enumExample = new EnumExample();
+        EnumExample.Colors value = EnumExample.Colors.BLUE;
+        System.out.println(enumExample.ColorTeller(String.valueOf(value)));
+
 
     }
 }
