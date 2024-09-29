@@ -7,6 +7,8 @@ import methods.SecondClass;
 import polymorphism.Animal;
 import polymorphism.Dog;
 import polymorphism.Pig;
+import threads.RunnableClass;
+import threads.ThreadClass;
 
 import static methods.MethodBasic.myMethod;
 import static methods.PublicVsStatic.myStaticMethod;
@@ -45,6 +47,12 @@ public class Main {
         EnumExample enumExample = new EnumExample();
         EnumExample.Colors value = EnumExample.Colors.BLUE;
         System.out.println(enumExample.ColorTeller(String.valueOf(value)));
+        ThreadClass threadClass = new ThreadClass();
+        threadClass.start();
+        System.out.println("out side thread");
+        RunnableClass runnableClass = new RunnableClass();
+        Thread thread = new Thread(runnableClass);
+        thread.start();
 
 
 
